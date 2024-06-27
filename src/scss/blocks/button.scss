@@ -1,13 +1,12 @@
-.button{
-    color:#FFFFFF ;
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-    margin: 0px auto;
+.form{
     
-    background-color: #21092F;
+&__button{
+    color:#FFFFFF ;
+    
+    margin-top: 20px;
     width: 327px;
-    height: 43px;
+    height: 50px;
+    background-color: #21092F;
     border-radius: 8px;
     border: none;
-}
+}}

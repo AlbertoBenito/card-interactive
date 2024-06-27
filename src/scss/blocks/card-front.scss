@@ -1,10 +1,17 @@
-
+@use '../mixins/responsive.scss' as *;
 .cards{
-  
+   
     &__front{
+        box-shadow: 0px 4px 20px 0px #000000;
         position: absolute;
         top: 175px;
         left: 17px;
+        border-radius: 10px;
+        @include responsive (desktop){
+            position: absolute;
+            top: 187px;
+            left: 250px;    
+            }
     
         &--logo{
             position: absolute;

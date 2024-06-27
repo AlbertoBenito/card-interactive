@@ -1,11 +1,18 @@
+@use '../mixins/responsive.scss' as *;
+
 .form{
     width: 327px;
-    height: 328px;
+   
     display: flex;
     flex-direction: column;
     margin: auto;
     color: #21092F;
     text-transform: uppercase;
+    @include responsive (desktop){
+        position: absolute;
+        top: -200px;
+        left: 1200px;
+    }
     
     &__name{
         display: flex;
@@ -13,6 +20,7 @@
      width: 327px;
      height: 69px;
      margin-bottom: 20px;
+     margin-top: 500px;
      .name{
         margin-top: 10px;
         width: 327;

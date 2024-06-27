@@ -1,11 +1,21 @@
 @use '../mixins/responsive.scss' as *;
 
 .cards{
-  
+ 
 &__back{
     position: absolute;
     top: 32px;
     left: 72px;
+    box-shadow: 0px 4px 20px 0px #000000;
+    border-radius: 10px;
+
+    @include responsive (desktop){
+        position: absolute;
+        top: 469px;
+        left: 400px;
+           
+            
+        }
 
     &--info{
         .cvv{
