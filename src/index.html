@@ -9,10 +9,51 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <main>
-      <div ><img class="bg-mobile" src="./assets/images/bg-main-mobile.png" alt=""></div>
-      <div><img src="./assets/images/bg-card-back.png" alt=""></div>
-      <div><img src="./assets/images/bg-card-front.png" alt=""></div>
+    <main class="main">
+     <div class="cards">
+      <div class="cards__back">
+        <div class="cards__back--info">
+        <img src="./assets/images/bg-card-back.png" alt="">
+        <span class="cvv">000</span></div>
+        </div>
+      </div>
+       <div class="cards__front">
+        <img src="./assets/images/bg-card-front.png" alt="">
+        <div class="cards__front--logo"><img src="./assets/images/card-logo.svg" alt=""></div>
+        <div class="cards__front--info">
+        <span class="number">0000 0000 0000 0000</span>
+        <span class="name">JANE APPLESEED</span>
+        <span class="date">00/00</span></div>
+      </div>
+     </div>
+
+     <form class="form">
+      <div class="form__name">
+        <label for="name">Cardholder Name</label>
+        <input class="name" id="name" type="text" placeholder="e.g. Jane Appleseed">
+      </div>
+      <div class="form__number">
+        <label for="number">Card Number</label>
+        <input class="number" id="number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+      </div>
+
+      <div class="form__date--cvc">
+        
+        <div class="form__dates">
+        <label for="date">Exp. Date (MM/YY)</label>
+        <div class="dates">
+        <input class="date" id="date" type="text" placeholder="MM">
+        <input class="date" id="date" type="text" placeholder="YY"></div>
+        </div>
+        <div class="form__cvc">
+          <label for="cvc">cvc</label>
+          <input class="cvc" type="text"  placeholder="e.g. 123">
+        </div>
+      </div>
+      </div>
+    </form>  
+    <button class="button">CONFIRM</button>  
+
 
     </main>
     <script type="module" src="./js/index.js"></script>

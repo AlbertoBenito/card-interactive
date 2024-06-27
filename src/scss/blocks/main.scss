@@ -1,1 +1,23 @@
+@use '../mixins/responsive.scss' as *;
 
+.main{
+    .cards{
+
+        position: relative;
+        background-image: url(../../assets/images/bg-main-mobile.png);
+        background-size: cover;
+        height: 240px;
+        margin-bottom: 300px;
+        @include responsive (desktop){
+            width: 483px;
+            background-image: url(../../assets/images/bg-main-desktop.png) ;
+            background-repeat:no-repeat;
+            background-size: contain;
+            min-height: 100vh;
+           
+            
+        }
+   }
+
+
+}

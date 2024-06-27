@@ -1,0 +1,24 @@
+@use '../mixins/responsive.scss' as *;
+
+.cards{
+  
+&__back{
+    position: absolute;
+    top: 32px;
+    left: 72px;
+
+    &--info{
+        .cvv{
+            position: absolute;
+            top: 112px;
+            left: 360px;
+            font-size: 15px;
+            color: white;
+        }
+
+
+    }
+
+
+}
+}
